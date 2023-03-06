@@ -1,0 +1,52 @@
+.event {
+	background-color: #8c04a8;
+	color: #edfc72;
+	height: 30vh;
+	width: 100%;
+	position: relative;
+	padding: 1rem;
+}
+
+.event:before {
+	content: "";
+	background: url("../../assets/Monsters.jpeg") no-repeat center center/cover;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+.event .container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+	margin: auto;
+}
+
+.event .form-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	margin: 1rem 0;
+}
+
+.event input {
+	padding: 0.7rem 1.5rem;
+	font-size: 1.2rem;
+	border-radius: 50px;
+}
+
+.event input[type="checkbox"] {
+	margin-right: 0.5rem;
+}
+
+@media screen and (max-width: 495px) {
+	.event .display-col {
+		flex-direction: column;
+	}
+}

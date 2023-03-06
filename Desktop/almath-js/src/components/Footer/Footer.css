@@ -1,0 +1,31 @@
+.footer {
+	width: 100%;
+	background-color: #5a016d;
+	color: white;
+	padding: 4rem 0;
+	text-align: center;
+}
+
+.footer .container {
+	max-width: 1140px;
+	margin: auto;
+	display: grid;
+	padding: 1rem;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.footer h4 {
+	display: inline-block;
+	border-bottom: 3px solid #80e800;
+	padding-bottom: 0.2rem;
+}
+
+.footer .col {
+	margin: 1rem 0;
+}
+
+@media screen and (max-width: 940px) {
+	.footer .container {
+		grid-template-columns: 1fr 1fr;
+	}
+}
